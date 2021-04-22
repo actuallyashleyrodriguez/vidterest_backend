@@ -5,11 +5,17 @@ class Api::V1::CategoriesController < ApplicationController
     end
 
     def create
-       category Category.new(video_params)
+       category = Category.new(category_params)
         if category.save
-            render json: CategorySerializer.new(video), status: :accepted
+            render json: CategorySerializer.new(category), status: :accepted
         else
             render json: {errors: category.errors.full_messages}, status: :unprocessible_entity
         end
+    end
+
+    private
+
+    def category_params
+        params.fetch(:category, {}).permit!
     end
 end
