@@ -17,6 +17,6 @@ class Api::V1::VideosController < ApplicationController
     private
 
     def video_params
-        params.require(:videos).permit!
+        params.require(:video).permit!
     end
 end
