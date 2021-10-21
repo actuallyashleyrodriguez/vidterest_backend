@@ -3,8 +3,14 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :videos, only: [:index, :create]
-      resources :categories, only: [:index, :create]
+      resources :videos
+      resources :categories 
+    end
+    namespace :v2 do
+      resources :categories do
+        resources :videos
+      end
+      resources :videos
     end
   end
 end

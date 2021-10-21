@@ -12,7 +12,7 @@ recipes = Category.create(name: "Recipes")
 art = Category.create(name: "Art")
 funny = Category.create(name: "Funny")
 
-diy1 = Video.create(title: "Shelf DIY", description: "Organize cabinets and  shelf", video_url: "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@btypep/video/6950319971268414725&maxwidth=200&maxheight=300", category_id: diy.id)
+diy1 = Video.create(title: "Shelf DIY", description: "Organize cabinets and  shelf", video_url: "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@btypep/video/6950319971268414725", category_id: diy.id)
 diy2 = Video.create(title: "Screw DIY" , description: "Screw  hack for DIY Projects", video_url: "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@tool_tips/video/6943251704687152390", category_id: diy.id)
 recipes1 = Video.create(title: "Birria Tacos" , description: "Newt Recipe Birra Tacos", video_url: "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@newt/video/6901841205122911494", category_id: recipes.id)
 recipes2 = Video.create(title: "Mangu" , description: "EkleinVT Recipe for Mangu", video_url: "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@ekleinvt/video/6899583316559760646", category_id: recipes.id)
