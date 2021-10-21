@@ -4,6 +4,7 @@ class Api::V2::CategoriesController < ApplicationController
         render json: CategorySerializer.new(categories)
     end
 
+
     def create
        category = Category.new(category_params)
         if category.save
